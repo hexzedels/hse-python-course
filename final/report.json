@@ -1,0 +1,156 @@
+{
+  "suspicious_ips": [
+    {
+      "src_ip": "172.16.0.88",
+      "alert_count": 7
+    },
+    {
+      "src_ip": "192.168.1.105",
+      "alert_count": 6
+    },
+    {
+      "src_ip": "10.0.0.50",
+      "alert_count": 5
+    },
+    {
+      "src_ip": "192.168.1.200",
+      "alert_count": 4
+    }
+  ],
+  "high_vulns": [
+    {
+      "id": "CVE-2024-3094",
+      "title": "XZ Utils Backdoor",
+      "cvss": 10.0,
+      "software": "xz"
+    },
+    {
+      "id": "CVE-2024-1709",
+      "title": "ConnectWise ScreenConnect Auth Bypass",
+      "cvss": 10.0,
+      "software": "connectwise"
+    },
+    {
+      "id": "CVE-2023-20198",
+      "title": "Cisco IOS XE Web UI Privilege Escalation",
+      "cvss": 10.0,
+      "software": "cisco"
+    },
+    {
+      "id": "CVE-2024-6387",
+      "title": "OpenSSH regreSSHion RCE",
+      "cvss": 9.8,
+      "software": "openssh"
+    },
+    {
+      "id": "CVE-2023-27997",
+      "title": "FortiOS Heap Overflow",
+      "cvss": 9.8,
+      "software": "fortinet"
+    },
+    {
+      "id": "CVE-2023-38408",
+      "title": "OpenSSH Agent RCE",
+      "cvss": 9.8,
+      "software": "openssh"
+    },
+    {
+      "id": "CVE-2024-0012",
+      "title": "PAN-OS Auth Bypass",
+      "cvss": 9.8,
+      "software": "paloalto"
+    },
+    {
+      "id": "CVE-2023-23397",
+      "title": "Outlook NTLM Relay",
+      "cvss": 9.1,
+      "software": "outlook"
+    },
+    {
+      "id": "CVE-2023-4863",
+      "title": "libwebp Heap Buffer Overflow",
+      "cvss": 8.8,
+      "software": "libwebp"
+    },
+    {
+      "id": "CVE-2024-21626",
+      "title": "runc Container Escape",
+      "cvss": 8.6,
+      "software": "docker"
+    },
+    {
+      "id": "CVE-2023-44487",
+      "title": "HTTP/2 Rapid Reset DDoS",
+      "cvss": 7.5,
+      "software": "nginx"
+    },
+    {
+      "id": "CVE-2023-36884",
+      "title": "Office HTML RCE",
+      "cvss": 7.5,
+      "software": "office"
+    }
+  ],
+  "actions": [
+    {
+      "type": "block_ip",
+      "ip": "172.16.0.88",
+      "command": "iptables -A INPUT -s 172.16.0.88 -j DROP"
+    },
+    {
+      "type": "block_ip",
+      "ip": "192.168.1.105",
+      "command": "iptables -A INPUT -s 192.168.1.105 -j DROP"
+    },
+    {
+      "type": "block_ip",
+      "ip": "10.0.0.50",
+      "command": "iptables -A INPUT -s 10.0.0.50 -j DROP"
+    },
+    {
+      "type": "block_ip",
+      "ip": "192.168.1.200",
+      "command": "iptables -A INPUT -s 192.168.1.200 -j DROP"
+    },
+    {
+      "type": "telegram_alert",
+      "cve": "CVE-2024-3094",
+      "message": "КРИТИЧЕСКАЯ УЯЗВИМОСТЬ CVE-2024-3094 (CVSS 10.0): XZ Utils Backdoor"
+    },
+    {
+      "type": "telegram_alert",
+      "cve": "CVE-2024-1709",
+      "message": "КРИТИЧЕСКАЯ УЯЗВИМОСТЬ CVE-2024-1709 (CVSS 10.0): ConnectWise ScreenConnect Auth Bypass"
+    },
+    {
+      "type": "telegram_alert",
+      "cve": "CVE-2023-20198",
+      "message": "КРИТИЧЕСКАЯ УЯЗВИМОСТЬ CVE-2023-20198 (CVSS 10.0): Cisco IOS XE Web UI Privilege Escalation"
+    },
+    {
+      "type": "telegram_alert",
+      "cve": "CVE-2024-6387",
+      "message": "КРИТИЧЕСКАЯ УЯЗВИМОСТЬ CVE-2024-6387 (CVSS 9.8): OpenSSH regreSSHion RCE"
+    },
+    {
+      "type": "telegram_alert",
+      "cve": "CVE-2023-27997",
+      "message": "КРИТИЧЕСКАЯ УЯЗВИМОСТЬ CVE-2023-27997 (CVSS 9.8): FortiOS Heap Overflow"
+    },
+    {
+      "type": "telegram_alert",
+      "cve": "CVE-2023-38408",
+      "message": "КРИТИЧЕСКАЯ УЯЗВИМОСТЬ CVE-2023-38408 (CVSS 9.8): OpenSSH Agent RCE"
+    },
+    {
+      "type": "telegram_alert",
+      "cve": "CVE-2024-0012",
+      "message": "КРИТИЧЕСКАЯ УЯЗВИМОСТЬ CVE-2024-0012 (CVSS 9.8): PAN-OS Auth Bypass"
+    },
+    {
+      "type": "telegram_alert",
+      "cve": "CVE-2023-23397",
+      "message": "КРИТИЧЕСКАЯ УЯЗВИМОСТЬ CVE-2023-23397 (CVSS 9.1): Outlook NTLM Relay"
+    }
+  ]
+}

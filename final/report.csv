@@ -1,0 +1,17 @@
+﻿тип,идентификатор,значение,описание
+Подозрительный IP,172.16.0.88,7.0,алертов
+Подозрительный IP,192.168.1.105,6.0,алертов
+Подозрительный IP,10.0.0.50,5.0,алертов
+Подозрительный IP,192.168.1.200,4.0,алертов
+Уязвимость,CVE-2024-3094,10.0,XZ Utils Backdoor
+Уязвимость,CVE-2024-1709,10.0,ConnectWise ScreenConnect Auth Bypass
+Уязвимость,CVE-2023-20198,10.0,Cisco IOS XE Web UI Privilege Escalation
+Уязвимость,CVE-2024-6387,9.8,OpenSSH regreSSHion RCE
+Уязвимость,CVE-2023-27997,9.8,FortiOS Heap Overflow
+Уязвимость,CVE-2023-38408,9.8,OpenSSH Agent RCE
+Уязвимость,CVE-2024-0012,9.8,PAN-OS Auth Bypass
+Уязвимость,CVE-2023-23397,9.1,Outlook NTLM Relay
+Уязвимость,CVE-2023-4863,8.8,libwebp Heap Buffer Overflow
+Уязвимость,CVE-2024-21626,8.6,runc Container Escape
+Уязвимость,CVE-2023-44487,7.5,HTTP/2 Rapid Reset DDoS
+Уязвимость,CVE-2023-36884,7.5,Office HTML RCE
